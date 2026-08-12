@@ -1,0 +1,4 @@
+interface:
+  display_name: "Think from First Principles"
+  short_description: "Rebuild hard problems from what must be true"
+  default_prompt: "Use $think-from-first-principles to challenge the assumptions in this problem and identify the best next experiment."

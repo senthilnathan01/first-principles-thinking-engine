@@ -2,7 +2,17 @@
 
 # First Principles Thinking Engine
 
-A framework and future app for breaking problems down to their most fundamental parts, then building better solutions from the ground up.
+A framework, usable Codex skill, and future app for breaking problems down to their most fundamental parts, then building better solutions from the ground up.
+
+## Try It Now
+
+The first working version is [`$think-from-first-principles`](.agents/skills/think-from-first-principles/SKILL.md), a repository-local Codex skill. Open this repository in Codex and invoke it directly:
+
+```text
+Use $think-from-first-principles to rethink how a small team should review AI-generated code without making delivery slower.
+```
+
+The skill is deliberately narrower than "question everything." It is intended for hard, ambiguous, or high-leverage problems where inherited assumptions may be hiding better options. It treats existing solutions as evidence, separates facts from assumptions, and ends with a falsifiable next experiment.
 
 ## Why
 
@@ -30,14 +40,15 @@ The point is not to sound philosophical. The point is to remove inherited assump
 
 Use this process:
 
-1. Define the problem clearly.
-2. List the assumptions inside the problem.
-3. Separate facts from beliefs, guesses, habits, and inherited defaults.
-4. Break the problem into fundamental components.
-5. Ask which components are truly necessary.
-6. Rebuild the solution from the components that remain.
-7. Compare the rebuilt solution against existing approaches.
-8. Test the solution against reality and update the model.
+1. Define the decision and how success will be judged.
+2. Classify important claims as observed, derived, assumed, or unknown.
+3. Separate hard constraints from soft and chosen constraints.
+4. Find the relevant lower bound: cost, time, energy, information, complexity, risk, attention, or human effort.
+5. Rebuild options from the constraints that remain.
+6. Compare them with the strongest conventional baseline.
+7. Check second-order effects, incentives, and failure modes.
+8. Try to falsify the leading option.
+9. Run the cheapest reversible experiment that reduces the most important uncertainty.
 
 ## Example Pattern
 
@@ -63,7 +74,7 @@ The user gives the app a problem. The app then:
 - Separates facts, constraints, unknowns, and guesses.
 - Challenges weak assumptions.
 - Rebuilds possible solutions from the ground up.
-- Shows the reasoning path clearly.
+- Shows a concise rationale and evidence trail.
 - Helps the user compare original thinking against conventional solutions.
 
 The goal is not just to answer the user. The goal is to teach the user how to think better while solving the problem.
